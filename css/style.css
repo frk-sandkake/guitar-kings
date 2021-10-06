@@ -1,0 +1,56 @@
+body,
+html {
+  background-color: lightseagreen;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.my-header {
+  display: block;
+  background-color: #202020;
+  height: 48px;
+}
+
+.my-header .logo {
+  display: inline-block;
+  color: #fff;
+  font-weight: 800;
+}
+
+.navigation {
+  display: inline-block;
+  background-color: transparent;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-banner {
+  background-color: cyan;
+  background-image: url("/img/guitar-1.png");
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.inner {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.footer {
+  color: #fff;
+  background-color: darkslategray;
+}
