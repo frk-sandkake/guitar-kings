@@ -8,15 +8,17 @@
       content="Guitar Kings, the best guitars in the world"
     />
     <meta name:="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="my-header">
+    <header class="header">
       <div class="inner">
-        <span class="logo">Guitar Kings</span>
+        <a href="index.html" class="logo">Guitar Kings</a>
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
         <nav class="navigation">
           <ul>
             <li><a href="/">Home</a></li>
@@ -31,9 +33,10 @@
             HasLayout: 
             element will be stacked on top of other elements
         -->
-    <section class="hero-banner">
-      <div class="inner">
+    <section class="hero-banner inner">
+      <div class="welcome-content">
         <h1>Authentic Handmade Guitars</h1>
+        <a href="guitars.html" class="cta cta-large">View Guitars</a>
       </div>
     </section>
 
@@ -47,11 +50,6 @@
           <li>Beautiful unique sound</li>
           <li>Options for all music lovers</li>
         </ul>
-        <img
-          class="fit-picture"
-          src="./images/guitar-1.png"
-          alt="Hands strumming guitar"
-        />
       </div>
     </section>
 
