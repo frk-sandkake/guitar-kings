@@ -1,96 +1,94 @@
-@font-face {
-  font-family: "Boots And Spurs";
-  src: url("../font/BootsAndSpurs.ttf") format("ttf");
+@import "imports/root.css";
+@import "imports/link-btn.css";
+
+* {
+  box-sizing: border-box;
 }
 
-.body {
-  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+body {
+  font-family: var(--text-paragraph), Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-background);
   min-height: 100vh;
+  margin: 0;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
 
 h1,
-h2 {
-  font-family: "Boots And Spurs";
+h2,
+.logo {
+  font-family: var(--text-heading), "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+h3,
+p {
+  margin-left: 0.5rem
 }
 
-.inner {
-  max-width: 987;
-  margin: 0 auto;
+h1 {
+  color: var(--color-text-dark);
 }
 
-.header,
-.footer {
-  color: #fff;
-  background-color: #202020;
-}
-
-.navigation {
-  display: inline-block;
-  background-color: transparent;
-}
-
-.navigation ul {
+ul{
   list-style: none;
 }
 
-.navigation ul li {
-  display: inline-block;
-  margin-right: 20px;
+img {
+  width: 100%;
 }
 
-.navigation ul li a {
-  color: #fff;
-  text-decoration: none;
+main {
+  margin-bottom: 1rem;
 }
 
-.hero-banner {
-  background-image: url("/images/guitar-1.png");
-  height: 500px;
+/* Header and Footer */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
 }
 
-.inner {
-  max-width: 987px;
+header,
+footer {
+  color: var(--color-text-light);
+  background-color: var(--color-primary);
 }
 
-.cta {
-  background-color: #bb0000;
-  color: #fff;
-  font-size: 1em;
+nav {
+  margin-left: 25px;
+  display: none;
+  position: fixed;
+  top: 45px;
+  background: var(--color-primary);
+  z-index: 1000;
+  right: 0;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: block;
+  padding: 1.5rem 2rem;
   text-transform: uppercase;
-  border-radius: 5px;
-  position: relative;
-  display: inline-block;
+  font-weight: bolder;
 }
 
-.cta:before {
-  content: "";
-  padding: 10px;
-  background: #fff;
-  transform: rotate(45deg);
-  position: absolute;
-  height: 100px;
-  top: -40px;
-  left: -100px;
+#mobile-menu {
+  display: none;
 }
 
-.cta-large {
-  padding: 10px 40px;
+#mobile-menu:checked ~ nav {
+  display: block;
 }
 
-.cta-small {
-  padding: 8px 20px;
-  font-size: 0.8em;
-  grid-column: 2;
-  grid-row: 2;
-  min-width: 51.2px;
+footer {
   text-align: center;
-  margin-top: 5px;
+  padding: 2rem 0;
 }
+/* Header and Footer END */
+
+

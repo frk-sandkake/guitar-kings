@@ -1,118 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <!-- Head with meta, title, links to fonts, style.css and js script to icons -->
   <head>
-    <!-- Guitar Kings website -->
-    <title>Guitar Kings</title>
-    <meta
-      name="description"
-      content="Guitar Kings, the best guitars in the world"
-    />
-    <meta name:="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Get real authentic, hand-crafted guitars from Guitar Kings" />
+      <title>Guitar Kings</title>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/index.css" />
+      <link rel="stylesheet" href="css/media.css" />
+      <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
   </head>
-
+  <!-- <Body> element, where all the website content goes -->
   <body>
-    <header class="header">
-      <div class="inner">
+    <!-- <Header> element with website navigation -->
+    <header>
         <a href="index.html" class="logo">Guitar Kings</a>
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu" />
-        <nav class="navigation">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="./guitars.html">Guitars</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+        <label for="mobile-menu"><i class="fas fa-bars" aria-hidden="true"></i></label>
+        <input type="checkbox" id="mobile-menu" />
+        <nav>
+          <ul role="menu">
+            <li role="menuitem"><a href="index.html" class="active">Home</a></li>
+            <li role="menuitem"><a href="guitars.html">Guitars</a></li>
+            <li role="menuitem"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      </div>
     </header>
-    <!-- 
-            HasLayout: 
-            element will be stacked on top of other elements
-        -->
-    <section class="hero-banner inner">
-      <div class="welcome-content">
-        <h1>Authentic Handmade Guitars</h1>
-        <a href="guitars.html" class="cta cta-large">View Guitars</a>
-      </div>
-    </section>
-
-    <section class="our-guitars">
-      <div class="inner">
-        <h2>Our Guitars are:</h2>
-        <ul>
-          <li>Made with real Pennsylvanian wood</li>
-          <li>Crafted by a family-run business</li>
-          <li>Built to last a lifetime</li>
-          <li>Beautiful unique sound</li>
-          <li>Options for all music lovers</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="reviews">
-      <div class="inner">
-        <h2>Reviews</h2>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse
-          quis dictum elit. In hac habitasse platea dictumst" -Bob Willis
-        </p>
-        <img
-          class="fit-picture"
-          src="./images/person-1.png"
-          alt="Profile pic of Bob Willis"
-        />
-        <p>
-          "Maecenas interdum, erat nec pulvinar euismod, eros erat ornare
-          mauris, commodo vestibulum odio nunc id urna. Sed volutpat consequat
-          dolor,nec sollicitudin elit eleifend vitae." -Sally Oldfield
-        </p>
-        <img
-          class="fit-picture"
-          src="./images/person-2.png"
-          alt="Profile pic of Sally Oldfield"
-        />
-        <section class="view-our.guitars">
-          <div class="inner">
-            <h2>View Our Guitars</h2>
-            <img
-              class="fit-picture"
-              src="./images/guitar-2.png"
-              alt="Adirondack Red"
-            />
-            <h3>Adirondack Red</h3>
-            <p>$500</p>
-            <a href="./products/adirondack-red.html">View</a>
-            <br />
-            <img
-              class="fit-picture"
-              src="./images/guitar-2.png"
-              alt="Adirondack Red"
-            />
-            <h3>Adirondack Red</h3>
-            <p>$500</p>
-            <a href="./products/adirondack-red.html">View</a>
-            <br />
-            <img
-              class="fit-picture"
-              src="./images/guitar-2.png"
-              alt="Adirondack Red"
-            />
-            <h3>Adirondack Red</h3>
-            <p>$500</p>
-            <a href="./products/adirondack-red.html">View</a>
+    <!-- <Main> element, where main page content goes -->
+    <main>
+        <!-- <Section> element, with <H1> and <a href=""> background image is in CSS -->
+        <section class="welcome" aria-label="Welcome banner">
+          <div role="none" class="welcome__content">
+            <h1>Authentic Handmade Guitars</h1>
+            <a href="guitars.html" class="cta cta-large">View Guitars</a>
           </div>
         </section>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="inner">&copy; Copyright</div>
+        <!-- <Article> element, with selling points -->
+        <article class="selling-points" aria-label="Product selling points">
+          <div role="none" aria-label="Listed selling points" class="selling-points__info">
+            <h2>Our Guitars are:</h2>
+            <ul role="list">
+              <li role="listitem"><i class="fa-solid fa-guitar" aria-hidden="true"></i>  Made with real Pennsylvanian wood</li>
+              <li role="listitem"><i class="fa-solid fa-guitar" aria-hidden="true"></i>  Crafted by a family-run business</li>
+              <li role="listitem"><i class="fa-solid fa-guitar" aria-hidden="true"></i>  Built to last a lifetime</li>
+              <li role="listitem"><i class="fa-solid fa-guitar" aria-hidden="true"></i>  Beautiful unique sound</li>
+              <li role="listitem"><i class="fa-solid fa-guitar" aria-hidden="true"></i>  Options for all music lovers</li>
+            </ul>
+          </div>
+            <div role="none" aria-label="Image">
+                <img src="/images/home-info.jpg" class="selling-points__image" alt="Hand strumming a guitar">
+          </div>
+        </article>
+        <!-- <Section> element Reviews Section -->
+        <section class="reviews" aria-label="Reviews">
+            <h2>Reviews</h2>
+            <div role="none" aria-label="" class="reviews__content">
+                <article class="reviews__card" aria-label="Reviewer">
+                    <h3>Best service!</h3>
+                    <q>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suspendisse
+                      quis dictum elit. In hac habitasse platea dictumst
+                    </q>
+                    <p class="reviews__name">- Bob Willis</p>
+                    <img
+                      class="review__images"
+                      src="./images/review-bio.jpg"
+                      alt="Profile pic of Bob Willis"
+                    />
+                </article>
+                <article class="reviews__card" aria-label="Reviewer">
+                    <h3>Love the Adirondack Red from us</h3>
+                    <q>
+                      Maecenas interdum, erat nec pulvinar euismod, eros erat ornare
+                      mauris, commodo vestibulum odio nunc id urna. Sed volutpat consequat
+                      dolor,nec sollicitudin elit eleifend vitae.
+                    </q>
+                    <p class="reviews__name">- Sally Oldfield</p>
+                    <img
+                      class="review__images"
+                      src="./images/review-bio2.jpg"
+                      alt="Profile pic of Sally Oldfield"
+                    />
+                </article>
+            </div>
+        </section>
+        <!-- <Section> element Featured products Section -->
+        <section class="featured-products" aria-label="Featured products">
+            <h2>Featured Guitars</h2>
+            <article class="product__card">
+                <img
+                  src="./images/product.jpg"
+                  alt="Adirondack Red"
+                />
+                <h3>Adirondack Red</h3>
+                <p>$500</p>
+                <a href="./products/adirondack-red.html" class="cta cta-small">View</a>
+            </article>
+            <article class="product__card">
+                <img
+                  src="./images/product.jpg"
+                  alt="Adirondack Red"
+                />
+                <h3>Adirondack Red</h3>
+                <p>$500</p>
+                <a href="./products/adirondack-red.html"  class="cta cta-small">View</a>
+            </article>
+            <article class="product__card">
+                <img
+                  src="./images/product.jpg"
+                  alt="Adirondack Red"
+                />
+                <h3>Adirondack Red</h3>
+                <p>$500</p>
+                <a href="./products/adirondack-red.html"  class="cta cta-small">View</a>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <small>&copy; 2021 Guitar Kings <br> | Project created by Noroff Technical School | Executed by frk.Sandkake</small>
     </footer>
-
-    <script src="./js/script.js"></script>
   </body>
 </html>

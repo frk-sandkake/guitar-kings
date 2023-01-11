@@ -1,0 +1,54 @@
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-text-light);
+}
+
+header a {
+    padding: 1rem;
+}
+
+.cta {
+    background-color: var(--color-secondary);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.cta:before {
+    content: "";
+    padding: 10px;
+    background: var(--color-text-light);
+    transform: rotate(45deg);
+    position: absolute;
+    height: 100px;
+    top: -40px;
+    left: -100px;
+    transition: left ease-in-out 1s;
+    opacity: 0.3;
+}
+
+.cta:hover:before {
+    left: 110%;
+}
+
+.cta-large {
+    padding: 10px 32px;
+}
+
+.cta-small {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    grid-column: 2;
+    grid-row: 2;
+    min-width: 3.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.active {
+    text-decoration: underline;
+}
