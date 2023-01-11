@@ -1,0 +1,14 @@
+:root {
+    --text-paragraph: "Roboto";
+    --text-heading: "Boots And Spurs";
+    --color-primary: #000218;
+    --color-secondary: #980000;
+    --color-text-light: #fcebeb;
+    --color-text-dark: #180000;
+    --color-background: #e8e8e8;
+}
+
+@font-face {
+    font-family: "Boots And Spurs";
+    src: url("../../font/BootsAndSpurs.ttf") format("truetype");
+}

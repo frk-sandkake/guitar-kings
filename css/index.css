@@ -1,0 +1,117 @@
+/* Landing page */
+.welcome {
+    background-image: url("/images/home-header.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    position: relative;
+}
+/* short version: background-image: url("/images/home-header.jpg") center bottom no-repeat; */
+
+.welcome__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-text-light);
+}
+
+.selling-points {
+    margin: 4rem auto;
+}
+
+.selling-points,
+.reviews__content {
+    max-width: 1034px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.selling-points > *,
+.reviews__content > * {
+    flex: 1;
+}
+
+.selling-points__info ul {
+    width: max-content;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.selling-points__info li {
+    padding: 0.5rem 0;
+    font-weight: bold;
+}
+
+.selling-points__image {
+    border-radius: 100px;
+}
+
+.reviews {
+    padding: 2rem 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+.reviews__card {
+    border: solid 1px var(--color-text-light);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.reviews__name {
+    text-align: right;
+    font-style: italic;
+    margin-right: 7rem;
+}
+
+.review__images {
+    width: 3rem;
+    border-radius: 50%;
+    float: right;
+    margin-right: 2rem;
+    margin-top: -3rem;
+}
+
+.featured-products {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1034px;
+    margin: 4rem auto;
+    gap: 1rem;
+}
+
+.featured-products h2 {
+    grid-column: -1/1;
+}
+
+.product__card {
+    background-color: #dcdcdc;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    border: solid 2px var(--color-primary);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.product__card img {
+    grid-column: -1/1;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.product__card p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+.product__card:hover {
+    transform: scale(1.05);
+}
