@@ -91,4 +91,30 @@ footer {
 }
 /* Header and Footer END */
 
+/* Guitar product cards */
+.guitar__card {
+  background-color: #dcdcdc;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border: solid 2px var(--color-primary);
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
 
+.guitar__card img {
+  grid-column: -1/1;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.guitar__card p {
+  grid-column: 1;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  margin-top: 0;
+}
+
+.guitar__card:hover {
+  transform: scale(1.05);
+}
+/* Guitar product cards END */
