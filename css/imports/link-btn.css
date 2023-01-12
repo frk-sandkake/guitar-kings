@@ -49,6 +49,10 @@ header a {
     margin: 0.5rem;
 }
 
+.cta-sale {
+    background-color: var(--color-success);
+}
+
 .active {
     text-decoration: underline;
 }
