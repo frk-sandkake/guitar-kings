@@ -1,6 +1,7 @@
 .products-main {
     max-width: 1032px;
-    margin: auto;
+    margin: 3rem auto;
+    padding-bottom: 2rem;
 }
 
 .products-main .guitar__card {
@@ -24,4 +25,5 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    margin: 3rem 0;
 }
